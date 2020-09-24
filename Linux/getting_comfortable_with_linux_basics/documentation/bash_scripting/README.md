@@ -27,7 +27,14 @@
 3. How would you interact with someone? Would you read their mind secretly `read -s secret`? Or, would you let them say it out loud `read -p "Say it aloud this time: " not_secret`
 
     ```bash
-    echo -e "\nTell me a secret"; read -s secret; read -p "Say it aloud this time: " not_secret; if [ secret = not_secret ]; then echo "Ok!"; else echo -e "\nYour secret was: \n$secret"; fi
+    echo -e "\nTell me a secret"; 
+    read -s secret; 
+    read -p "Say it aloud this time: " not_secret; 
+    if [ secret = not_secret ]; then 
+        echo "Ok!"; 
+    else 
+        echo -e "\nYour secret was: \n$secret"; 
+    fi
     ```
 
     ![Read inputs](../image/bash_scripting/2c_readInput.png)
