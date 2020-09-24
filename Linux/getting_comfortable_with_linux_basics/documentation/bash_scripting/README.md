@@ -42,6 +42,9 @@
     ![Read inputs](../image/bash_scripting/2c_readInput.png)
 
 4. Try integer arithmetic: `echo $((2+5))`
+
+    ![Integer afrithmetic](../image/bash_scripting/4_integerArithmetic.png)
+
 5. Use `case` as an alternative to multiple `if` and `else` statements
 
     ```bash
@@ -130,7 +133,7 @@
         echo "Word $count ($i) contains $(echo -n $i | wc -c) characters"
     done
     ```
-9. Surround a variable name with curly braces, e.g., `${VARIABLE_NAME}`, to separate it from its surrounding text
+9.  Surround a variable name with curly braces, e.g., `${VARIABLE_NAME}`, to separate it from its surrounding text
 
 10. What if a command line parameter was not provided by user? Use `${1:-"Custom Message Here"}` to handle a scenario wherein if first parameter `$1` was undefined or not provided by user, then, a custom string value would be used instead.
 
