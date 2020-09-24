@@ -14,6 +14,7 @@
         echo "You must be root. Are you?";
     else
         echo "Let's just exit."
+        exit 1
     fi
     ```
 
