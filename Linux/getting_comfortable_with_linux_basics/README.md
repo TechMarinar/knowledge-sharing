@@ -14,16 +14,6 @@
    3. [Package Management](documentation/getting_started_with_linux/package_management/README.md)
    4. [Workspaces](documentation/getting_started_with_linux/workspaces/README.md)
    5. [Terminator - The Terminal Emulator](documentation/getting_started_with_linux/terminator/README.md)
-   6. Screens
-   7. [Virtual Terminal](documentation/getting_started_with_linux/virtual_terminal/README.md)
-   8. [Vim - The Text Editor](documentation/getting_started_with_linux/vim_text_editor/README.md)
-   9. [BASH Shell](documentation/getting_started_with_linux/bash_shell/README.md)
-   10. Redirection
-   11. Sudo
-   12. User Administration
-   13. System Administration
-   14. File Management
-   15. Process Management
-   16. Device Administration
-   17. Communication Commands
-   18. Keyboard shortcuts
+   6. [Virtual Terminal](documentation/getting_started_with_linux/virtual_terminal/README.md)
+   7. [Vim - The Text Editor](documentation/getting_started_with_linux/vim_text_editor/README.md)
+   8. [BASH Shell](documentation/getting_started_with_linux/bash_shell/README.md)
