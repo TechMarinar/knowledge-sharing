@@ -1,8 +1,8 @@
-# The null Community
+# Knowledge Sharing
 
-This repository is intended to contain hands-on training content specifically for conducting null Humla/Puliya sessions in various null chapters across India. 
+This repository is intended to contain hands-on training content (and very little theory) for anyone and everyone who might be interested. 
 
-Keeping in mind the repeated demand for the same training content again and again, but for a newer audience, we are creating this repository. Anyone is free to enhance the existing content and/or use the training material provided here to deliver a null Humla/Puliya session in any of the null communities across India.
+Keeping in mind the repeated demand for the same training content again and again, but for a newer audience, I am creating this repository. Anyone is free to enhance the existing content and/or use the training material provided here for self-learning or to deliver sessions in open communities. 
 
 1. [Linux](Linux/README.md)
 2. [Windows](Windows/README.md)
