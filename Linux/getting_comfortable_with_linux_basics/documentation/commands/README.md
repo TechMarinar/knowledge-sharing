@@ -65,11 +65,45 @@
     ![whatis](../image/bash_scripting/8_whatis.png)
 
 19. Use `zless` to **view** contents of a **gzip-compressed** text file: `zless /path/to/compressed_file.gz`
-20. Record shell session using `script`
+20. **Record** shell session using `script`
 
         script filename.txt
 
     To stop recording, press `Ctrl-d`
+
+21. Control **file default permissions** using `umask`
+
+        $ umask
+        0022
+        $ > foo.txt
+        $ ls -l foo.txt 
+        -rw-r--r-- 1 mirage mirage 0 Oct  7 00:59 foo.txt
+        $ umask 0000
+        $ > foo1.txt
+        $ ls -l foo1.txt 
+        -rw-rw-rw- 1 mirage mirage 0 Oct  7 01:00 foo1.txt
+
+22. **Setuid** bit (Octal 4000)
+    
+        $ chmod u+s file
+
+    A normal user can run an **executable file** with the effective privileges of the superuser
+
+        -rwsr-xr-x 1 mirage mirage    0 Oct  7 01:07 file*
+
+23. **Setgid** bit (Octal 2000)
+
+        $ chmod g+s dir/
+
+    Files created in this directory will be given **group ownership of the directory** rather than the group ownership of the file's creator
+
+        drwxr-sr-x 2 mirage mirage 4096 Oct  7 01:07 dir/
+
+24. **Sticky** bit (Octal 1000)
+
+        $ chmod +t dir/
+
+    If applied to a directory, users cannot delete or rename files in this directory unless the user is either the owner of the directory, owner of the file, or the superuser
 
 ## References:
 

@@ -12,3 +12,6 @@
 
 ![History expansion](../image/keyboard_tricks/2020-10-06_17-50_historyExpansion.png)
 
+## References:
+
+* [TheLinuxCommandLine-19.01.pdf](http://sourceforge.net/projects/linuxcommand/files/TLCL/19.01/TLCL-19.01.pdf/download)
