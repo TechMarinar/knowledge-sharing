@@ -37,4 +37,6 @@ The shell references standard input, output and error file streams internally as
         ls /usr/bin | tail -n 5
 
 10. Monitor a file in **real time**: `tail -f /var/log/messages`
-11. `tee` program reads standard input and copies it to both standard output and to one or more files
+11. `tee` program copies standard input to **both** standard output and one or more files
+
+        ls /usr/bin | tee ls.txt | grep zip

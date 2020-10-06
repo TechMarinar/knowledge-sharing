@@ -65,6 +65,11 @@
     ![whatis](../image/bash_scripting/8_whatis.png)
 
 19. Use `zless` to **view** contents of a **gzip-compressed** text file: `zless /path/to/compressed_file.gz`
+20. Record shell session using `script`
+
+        script filename.txt
+
+    To stop recording, press `Ctrl-d`
 
 ## References:
 
