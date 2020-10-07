@@ -49,8 +49,49 @@
 
     *Note:* Type `exit` command to exit the shell and return to *Vim* text editor  
 
+19. Global search and **replace**: 
+    
+        :%s/Line/line/g
+        :%s/Line/line/gc
+
+20. Edit **multiple** files
+
+        vi foo.txt foo1.txt
+        :bn
+        :bp
+        :buffers
+        :buffer 1
+
+    **Add** a new file
+
+        :e foo3.txt
+
+    **Insert** an etire file into another
+
+        :r foo4.txt
+
+    **Save** the edited file with a different name
+
+        :w foo5.txt
+
+    In command mode, typing **ZZ** will save the current file and exit vi.
+
+## Cursor Movement Keys
+
+![Cursor movement keys](../../image/misc/2020-10-07_19-14_vim.png)`
+
+## Text Deletion Commands
+
+![Text deletion commands](../../image/misc/2020-10-07_19-50_vimTextDeletion.png)
+
 ## References
 
 * https://www.youtube.com/watch?v=UIwcTU10F5k
 * https://opensource.com/article/19/2/getting-started-vim-visual-mode
 * http://vimregex.com/
+
+## Resources
+
+* http://linuxcommand.org/lc3_adv_vimvigor.php
+* ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf
+* https://tldp.org/HOWTO/Bash-Prompt-HOWTO/

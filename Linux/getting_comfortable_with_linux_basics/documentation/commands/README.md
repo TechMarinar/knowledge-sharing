@@ -105,6 +105,18 @@
 
     If applied to a directory, users cannot delete or rename files in this directory unless the user is either the owner of the directory, owner of the file, or the superuser
 
+25. Display a list of **all packages installed** on the system
+
+        dpkg -l
+
+26. Check if a package is **installed or not**
+
+        dpkg -s package_name
+
+27. View **description** of an installed package
+
+        apt-cache show package_name
+
 ## References:
 
 * [TheLinuxCommandLine-19.01.pdf](http://sourceforge.net/projects/linuxcommand/files/TLCL/19.01/TLCL-19.01.pdf/download)

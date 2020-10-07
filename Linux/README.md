@@ -9,3 +9,4 @@ This repository contains hands-on training content on how to attack a Linux box.
    * [Changing Identity](getting_comfortable_with_linux_basics/documentation/changing_identity/README.md)
    * [Random Useful Commands](getting_comfortable_with_linux_basics/documentation/commands/README.md)
    * [Keyboard Tricks](getting_comfortable_with_linux_basics/documentation/keyboard_tricks/README.md)
+   * [Processes](getting_comfortable_with_linux_basics/documentation/processes/README.md)
