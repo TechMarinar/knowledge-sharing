@@ -10,3 +10,6 @@ This repository contains hands-on training content on how to attack a Linux box.
    * [Random Useful Commands](getting_comfortable_with_linux_basics/documentation/commands/README.md)
    * [Keyboard Tricks](getting_comfortable_with_linux_basics/documentation/keyboard_tricks/README.md)
    * [Processes](getting_comfortable_with_linux_basics/documentation/processes/README.md)
+
+2. [Password Guessing](password_guessing/README.md)
+3. [Generating Attack Payload](generating_attack_payload/README.md)
