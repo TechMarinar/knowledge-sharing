@@ -29,17 +29,21 @@
 
     As both `fun` and `fun-hard` share the same inode number, this confirms that they are the same file.
 
-13. Create **symbolic link** for a file or a folder: `ln -s file_or_folder_path symlink_path`
+13. **Create** **symbolic link** for a file or a folder: `ln -s file_or_folder_path symlink_path`
 
     ![Create a symbolic link, or, symlink](../image/bash_scripting/6b_symbolic_link.png)
 
-14. Display a command's **type**: 
+14. **Update** an existing **symbolic link**
+
+        ln -sfn /usr/lib/jvm/java-11-openjdk-amd64/bin/java /etc/alternatives/java
+
+15. Display a command's **type**: 
     1.  `type type`
     2.  `type ls`
     3.  `type cp`
 
-15. Determine the exact **location** of a given **executable**: `which ls`
-16. The “manual” that **man** command displays is broken into sections
+16. Determine the exact **location** of a given **executable**: `which ls`
+17. The “manual” that **man** command displays is broken into sections
 
     Section | Contents
     --- | ---
@@ -54,24 +58,24 @@
 
     A specific section of the manual could be referenced by specifying the section number: `man 5 passwd`
 
-17. Use `apropos` or `man -k` to search the list of man pages for **possible matches** based on a search term: 
+18. Use `apropos` or `man -k` to search the list of man pages for **possible matches** based on a search term: 
     1. `man -k adduser`
     2. `apropos adduser`
 
         ![apropos](../image/bash_scripting/7_apropos.png)
 
-18. Use `whatis` to view **one line manual** page descriptioin: `whatis ls`
+19. Use `whatis` to view **one line manual** page descriptioin: `whatis ls`
 
     ![whatis](../image/bash_scripting/8_whatis.png)
 
-19. Use `zless` to **view** contents of a **gzip-compressed** text file: `zless /path/to/compressed_file.gz`
-20. **Record** shell session using `script`
+20. Use `zless` to **view** contents of a **gzip-compressed** text file: `zless /path/to/compressed_file.gz`
+21. **Record** shell session using `script`
 
         script filename.txt
 
     To stop recording, press `Ctrl-d`
 
-21. Control **file default permissions** using `umask`
+22. Control **file default permissions** using `umask`
 
         $ umask
         0022
@@ -83,7 +87,7 @@
         $ ls -l foo1.txt 
         -rw-rw-rw- 1 mirage mirage 0 Oct  7 01:00 foo1.txt
 
-22. **Setuid** bit (Octal 4000)
+23. **Setuid** bit (Octal 4000)
     
         $ chmod u+s file
 
@@ -91,7 +95,7 @@
 
         -rwsr-xr-x 1 mirage mirage    0 Oct  7 01:07 file*
 
-23. **Setgid** bit (Octal 2000)
+24. **Setgid** bit (Octal 2000)
 
         $ chmod g+s dir/
 
@@ -99,21 +103,21 @@
 
         drwxr-sr-x 2 mirage mirage 4096 Oct  7 01:07 dir/
 
-24. **Sticky** bit (Octal 1000)
+25. **Sticky** bit (Octal 1000)
 
         $ chmod +t dir/
 
     If applied to a directory, users cannot delete or rename files in this directory unless the user is either the owner of the directory, owner of the file, or the superuser
 
-25. Display a list of **all packages installed** on the system
+26. Display a list of **all packages installed** on the system
 
         dpkg -l
 
-26. Check if a package is **installed or not**
+27. Check if a package is **installed or not**
 
         dpkg -s package_name
 
-27. View **description** of an installed package
+28. View **description** of an installed package
 
         apt-cache show package_name
 
