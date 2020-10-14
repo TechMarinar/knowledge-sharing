@@ -23,3 +23,4 @@ Regular user accounts cannot log into Domain Controllers.
 
 * [Active Directory Tutorial for Beginners](https://www.youtube.com/watch?v=nKcrVtvZvpk)
 * https://serveracademy.s3.amazonaws.com/Intro+to+IT.pdf
+* https://book.hacktricks.xyz/windows/windows-local-privilege-escalation/integrity-levels
