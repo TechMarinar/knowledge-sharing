@@ -11,4 +11,5 @@ This repository contains hands-on training content on how to attack a Windows bo
    * [SharpHound: Data Collector](windows_post_exploitation/sharphound/README.md)
    * [CrackMapExecWin: Subnet Scanner](windows_post_exploitation/crackmapexecwin/README.md)
    * [Active Directory Enumeration](windows_post_exploitation/active_directory_enumeration/README.md)
+   * [Indirect Shell: cmd.exe](windows_post_exploitation/indirect_shell/README.md)
    * [Reverse Shell: Powercat](windows_post_exploitation/reverse_shell_powercat/README.md)
