@@ -13,5 +13,5 @@ This repository contains hands-on training content on how to attack a Linux box.
 
 2. [Creating Custom Wordlist](creating_custom_wordlist/README.md)
 3. [Fuzzing](fuzzing/README.md)
-4. [Password Guessing](password_guessing/README.md)
+4. [Password Guessing/Cracking](password_guessing/README.md)
 5. [Generating Attack Payload](generating_attack_payload/README.md)

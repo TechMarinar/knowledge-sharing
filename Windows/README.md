@@ -7,12 +7,31 @@ This repository contains hands-on training content on how to attack a Windows bo
 3. [IIS Short File Name Disclosure](iis/README.md)
 4. [DS_Walk: If .DS_Store file is public](ds_walk/README.md)
 5. [Post Exploitation](windows_post_exploitation/README.md)
-   * [WinRM: Port 5985,5986](windows_post_exploitation/winrm_5985/README.md)
+   
    * [SharpHound: Data Collector](windows_post_exploitation/sharphound/README.md)
    * [CrackMapExecWin: Subnet Scanner](windows_post_exploitation/crackmapexecwin/README.md)
-   * [Active Directory Enumeration](windows_post_exploitation/active_directory_enumeration/README.md)
-   * [Indirect Shell in Restricted Environment](windows_post_exploitation/indirect_shell/README.md)
+   * [Getting Indirect Shell in Restricted Environment](windows_post_exploitation/indirect_shell/README.md)
    * [Powercat: Reverse Shell](windows_post_exploitation/reverse_shell_powercat/README.md)
    * [SMBServer: File Transfer](windows_post_exploitation/file_transfer_smbserver/README.md)
+   * [Active Directory Enumeration](windows_post_exploitation/active_directory_enumeration/README.md)
+     * [Crackmapexec: Scan a subnet](https://info.varonis.com/hubfs/docs/whitepapers/en/ebook_pen_testing_031317.pdf?hsLang=en)
+       * `.\crackmapexec.exe 172.16.NNN.NNN/24 -u Username -p "Password123"`
+     * [PowerView: Find users on the network with enhanced privileges]
+       * Import `PowerView.ps1`
+       * Fetch AD server names and domain: `PowerShell Get-NetComputer`
+       * Find all users currently logged in on all machines across the domain: `Invoke-UserHunter | ? {$_.ComputerName -eq 'domain.name.local'}`
+       * [Active Directory Schema](https://docs.microsoft.com/en-gb/windows/win32/adschema/c-organizationalperson?redirectedfrom=MSDN)
+       * [Auto-Kerberoast](https://github.com/xan7r/kerberoast)
+         * `Invoke-AutoKerberoast`
+       * [autokerberoast_noMimikatz.ps1](https://github.com/xan7r/kerberoast/blob/master/autokerberoast_noMimikatz.ps1)
+         * Display the extracted tickets in **hashcat compatible** format
+         * `Invoke-AutoKerberoast`
+     * [PowerShell: Domain Enumeration]
+       * `powershell -noexit "& ""C:\Users\jmendes\Desktop\GruntHTTP.ps1"""` ---> `https://poshoholic.com/2007/09/27/invoking-a-powershell-script-from-cmdexe-or-start-run/`
+   * [Attacking Kerberos](windows_post_exploitation/attacking_kerberos/README.md)
 
-6. [Generating Attack Payload](generating_attack_payload/README.md)
+6. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
+7. [Privilege Escalation](privilege_escalation/README.md)
+   * [WinRM: Port 5985,5986](privilege_escalation/winrm_5985/README.md)
+   * [AlwaysInstallElevated](privilege_escalation/alwaysinstallelevated/README.md)
+   * [CVE-2019-1388: GUI Interaction Required](https://github.com/jas502n/CVE-2019-1388)
