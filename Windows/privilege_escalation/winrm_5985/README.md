@@ -12,7 +12,7 @@ The [Evil-WinRM](https://github.com/Hackplayers/evil-winrm) program can be used 
 
 * **Launch** `evil-winrm` to gain shell access as a local administrator
 
-        evil-winrm -i IP -u USER -p PASSWORD
+        evil-winrm -i <IP> -u USERNAME -p PASSWORD
 
 * **Upload files** to the vulnerable server
 

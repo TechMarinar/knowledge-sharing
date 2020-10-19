@@ -9,3 +9,4 @@ Keeping in mind the repeated demand for the same training content again and agai
 3. [Web](Web/README.md)
 4. [Mobile](Mobile/README.md)
 5. [Network](Network/README.md)
+6. [Crypto](Crypto/README.md)

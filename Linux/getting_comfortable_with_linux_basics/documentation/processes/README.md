@@ -37,3 +37,13 @@
 6. View **process tree** specifiic to a user
 
         pstree root
+
+7. Find and kill a process that's running on a specific port
+
+        sudo netstat -ntlp | grep LISTEN
+        sudo netstat -ntlp | grep :8080
+        sudo kill -TERM <Process_ID>
+
+## References
+
+* https://gist.github.com/marcosvidolin/df5debc68e45314780a8
