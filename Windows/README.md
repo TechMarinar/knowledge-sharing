@@ -15,6 +15,7 @@ This repository contains hands-on training content on how to attack a Windows bo
    * [CrackMapExecWin: Subnet Scanner](windows_post_exploitation/crackmapexecwin/README.md)
    * [Getting Indirect Shell in Restricted Environment](windows_post_exploitation/indirect_shell/README.md)
    * [SMBServer: File Transfer](windows_post_exploitation/file_transfer_smbserver/README.md)
+   * [ROBOCOPY: Reverse File Transfer](windows_post_exploitation/reverse_file_transfer/README.md)
    * [Active Directory Enumeration](windows_post_exploitation/active_directory_enumeration/README.md)
      * [Crackmapexec: Scan a subnet](https://info.varonis.com/hubfs/docs/whitepapers/en/ebook_pen_testing_031317.pdf?hsLang=en)
        * `.\crackmapexec.exe 172.16.NNN.NNN/24 -u Username -p "Password123"`
