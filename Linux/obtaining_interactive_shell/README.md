@@ -6,3 +6,7 @@
     fg
     reset
     xterm
+
+## References
+
+* https://www.hackthebox.eu/home/start
