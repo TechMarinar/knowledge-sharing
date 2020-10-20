@@ -15,3 +15,4 @@ This repository contains hands-on training content on how to attack a Linux box.
 3. [Fuzzing](fuzzing/README.md)
 4. [Password Guessing/Cracking](password_guessing/README.md)
 5. [Generating Attack Payload](generating_attack_payload/README.md)
+6. [Obtaining Interactive Shell](obtaining_interactive_shell/README.md)

@@ -1,4 +1,6 @@
-# Impacket Tools
+# Using Impacket Tools
+
+## Setup
 
 1. Download latest release of **Impacket** from [SecureAuthCorp/impacket GitHub](https://github.com/SecureAuthCorp/impacket) repository
 
@@ -46,3 +48,17 @@
         -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
         -dc-ip ip address     IP Address of the domain controller. If ommited it use the domain part (FQDN) specified in the
                                 target parameter
+
+## mssqlclient.py
+
+
+
+## secretsdump.py
+
+
+
+## psexec.py
+
+* Use Impacket's `psexec.py` to gain a **privileged shell**
+
+        ./psexec.py administrator@10.10.10.4
