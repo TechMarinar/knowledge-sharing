@@ -11,3 +11,5 @@
 ## References
 
 * http://medium.com/@scottc130/how-to-use-wfuzz-to-fuzz-web-applications-8594c11d59d1
+* https://certcube.com/wfuzz-cheat-sheet-the-power-of-brute-forcer/
+* https://pentesterlab.com/exercises/from_sqli_to_shell_pg_edition/course
