@@ -10,3 +10,9 @@ Keeping in mind the repeated demand for the same training content again and agai
 4. [Mobile](Mobile/README.md)
 5. [Network](Network/README.md)
 6. [Crypto](Crypto/README.md)
+
+## References
+
+1. https://www.hackthebox.eu/
+2. http://www.exumbraops.com/blog
+3. https://www.corelan.be/index.php/articles/

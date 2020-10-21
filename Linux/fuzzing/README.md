@@ -1,12 +1,16 @@
 # Fuzzing
 
-1. Guess the filename starting with prefix `db_`
+1. Guess the **filename** starting with prefix `db_`
 
         wfuzz -c -z file,fuzz.txt -t 20 --sc 200 http://example.com/db_FUZZ.txt
 
-2. Test for SQL injection
+2. Test for **SQL injection**
    
         wfuzz -c -z file,/usr/share/wordlists/wfuzz/Injections/SQL.txt -d "username=admin&password=FUZZ" -u <TARGET_URL>
+
+3. Scan for **sub-directories** or **files** hosted on the server
+
+        gobuster dir -u http://10.10.10.4/ -w /usr/share/wordlists/dirb/common.txt
 
 ## References
 

