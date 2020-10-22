@@ -65,7 +65,7 @@
     }
 
 * Display: block | inline | inline-block | none
-* Common inline elements: <span> | <img> | <a>
+* Common inline elements: `<span> | <img> | <a>`
 * Position: static | relative | **absolute** | fixed
 * Coordinates: top | bottom | left | right
 

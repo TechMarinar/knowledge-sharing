@@ -9,14 +9,15 @@ This repository contains hands-on training content on how to attack a Windows bo
 5. [WinRM: Port 5985,5986](winrm_5985/README.md)
 6. [IIS Short File Name Disclosure](iis/README.md)
 7. [DS_Walk: If .DS_Store file is public](ds_walk/README.md)
-8. Code Execution
+8. [SSH: Port 22](ssh_22/README.md)
+9. Code Execution
    * [SQL Injection](https://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/)
    * [Microsoft IIS WebDAV Write Access Code Execution](https://www.rapid7.com/db/modules/exploit/windows/iis/iis_webdav_upload_asp)
-9. Reverse Shell
+10. Reverse Shell
    * [Powercat](reverse_shell/reverse_shell_powercat/README.md)
    * [PowerShell Reverse Shell](reverse_shell/powershell_reverse_shell/README.md)
    * [windows-php-reverse-shell](https://raw.githubusercontent.com/Dhayalanb/windows-php-reverse-shell/master/Reverse%20Shell.php)
-10. [Post Exploitation](windows_post_exploitation/README.md)
+11. [Post Exploitation](windows_post_exploitation/README.md)
    
    * [SharpHound: Data Collector](windows_post_exploitation/sharphound/README.md)
    * [CrackMapExecWin: Subnet Scanner](windows_post_exploitation/crackmapexecwin/README.md)

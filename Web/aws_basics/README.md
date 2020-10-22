@@ -186,4 +186,3 @@
   * kubectl delete node --all
   * $ terraform state list
   * $ terraform destroy
-
