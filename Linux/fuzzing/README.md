@@ -10,7 +10,8 @@
 
 3. Scan for **sub-directories** or **files** hosted on the server
 
-        gobuster dir -u http://10.10.10.4/ -w /usr/share/wordlists/dirb/common.txt
+        $ gobuster dir -u http://10.10.10.4/ -w /usr/share/wordlists/dirb/common.txt
+        $ gobuster dir -u http://10.10.10.4 -w /usr/share/wordlists/dirb/big.txt
 
 ## References
 
