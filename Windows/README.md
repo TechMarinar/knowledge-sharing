@@ -14,17 +14,17 @@ This repository contains hands-on training content on how to attack a Windows bo
    * [SQL Injection](https://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/)
    * [Microsoft IIS WebDAV Write Access Code Execution](https://www.rapid7.com/db/modules/exploit/windows/iis/iis_webdav_upload_asp)
 10. Reverse Shell
-   * [Powercat](reverse_shell/reverse_shell_powercat/README.md)
-   * [PowerShell Reverse Shell](reverse_shell/powershell_reverse_shell/README.md)
-   * [windows-php-reverse-shell](https://raw.githubusercontent.com/Dhayalanb/windows-php-reverse-shell/master/Reverse%20Shell.php)
+    * [Powercat](reverse_shell/reverse_shell_powercat/README.md)
+    * [PowerShell Reverse Shell](reverse_shell/powershell_reverse_shell/README.md)
+    * [windows-php-reverse-shell](https://raw.githubusercontent.com/Dhayalanb/windows-php-reverse-shell/master/Reverse%20Shell.php)
 11. [Post Exploitation](windows_post_exploitation/README.md)
-   
-   * [SharpHound: Data Collector](windows_post_exploitation/sharphound/README.md)
-   * [CrackMapExecWin: Subnet Scanner](windows_post_exploitation/crackmapexecwin/README.md)
-   * [Getting Indirect Shell in Restricted Environment](windows_post_exploitation/indirect_shell/README.md)
-   * [SMBServer: File Transfer](windows_post_exploitation/file_transfer_smbserver/README.md)
-   * [ROBOCOPY: Reverse File Transfer](windows_post_exploitation/reverse_file_transfer/README.md)
-   * [Active Directory Enumeration](windows_post_exploitation/active_directory_enumeration/README.md)
+    * [SharpHound: Data Collector](windows_post_exploitation/sharphound/README.md)
+    * [CrackMapExecWin: Subnet Scanner](windows_post_exploitation/crackmapexecwin/README.md)
+    * [Getting Indirect Shell in Restricted Environment](windows_post_exploitation/indirect_shell/README.md)
+    * [SMBServer: File Transfer](windows_post_exploitation/file_transfer_smbserver/README.md)
+    * [ROBOCOPY: Reverse File Transfer](windows_post_exploitation/reverse_file_transfer/README.md)
+    * [Finding Readable/Writable Files & Directories]()
+    * [Active Directory Enumeration](windows_post_exploitation/active_directory_enumeration/README.md)
      * [Crackmapexec: Scan a subnet](https://info.varonis.com/hubfs/docs/whitepapers/en/ebook_pen_testing_031317.pdf?hsLang=en)
        * `.\crackmapexec.exe 172.16.NNN.NNN/24 -u Username -p "Password123"`
      * [PowerView: Find users on the network with enhanced privileges]
@@ -39,7 +39,7 @@ This repository contains hands-on training content on how to attack a Windows bo
          * `Invoke-AutoKerberoast`
      * [PowerShell: Domain Enumeration]
        * `powershell -noexit "& ""C:\Users\jmendes\Desktop\GruntHTTP.ps1"""` ---> `https://poshoholic.com/2007/09/27/invoking-a-powershell-script-from-cmdexe-or-start-run/`
-   * [Attacking Kerberos](windows_post_exploitation/attacking_kerberos/README.md)
+    * [Attacking Kerberos](windows_post_exploitation/attacking_kerberos/README.md)
 
 11. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
 12. Privilege Escalation
