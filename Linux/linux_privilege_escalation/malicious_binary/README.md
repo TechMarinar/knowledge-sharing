@@ -1,4 +1,4 @@
-# Create Malicious Binary
+# Malicious Binary: Privilege Escalation
 
 1. Add current working directory to PATH
 

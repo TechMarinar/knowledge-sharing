@@ -1,6 +1,6 @@
 # AlwaysInstallElevated: Privilege Escalation
 
-**MSI packages** can be installed with **elevated privileges** by non-admin users.
+**MSI packages** can be installed with **elevated privileges** by non-admin users, if `AlwaysInstallElevated` privilege is enabled.
 
 ## Get an elevated reverse shell
 

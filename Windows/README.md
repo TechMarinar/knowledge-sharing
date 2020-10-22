@@ -5,16 +5,18 @@ This repository contains hands-on training content on how to attack a Windows bo
 1. [Windows Server Administration Basics](windows_server_administration_basics/README.md)
 2. [MSSQL: Port 1433](mssql_1443/README.md)
 3. [LDAP: Port 389](ldap_389/README.md)
-4. [IIS Short File Name Disclosure](iis/README.md)
-5. [DS_Walk: If .DS_Store file is public](ds_walk/README.md)
-6. Code Execution
+4. [Kerberos Pre-authentication: Port 88](kerberos_preauthentication/README.md)
+5. [WinRM: Port 5985,5986](winrm_5985/README.md)
+6. [IIS Short File Name Disclosure](iis/README.md)
+7. [DS_Walk: If .DS_Store file is public](ds_walk/README.md)
+8. Code Execution
    * [SQL Injection](https://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/)
    * [Microsoft IIS WebDAV Write Access Code Execution](https://www.rapid7.com/db/modules/exploit/windows/iis/iis_webdav_upload_asp)
-7. Reverse Shell
+9. Reverse Shell
    * [Powercat](reverse_shell/reverse_shell_powercat/README.md)
    * [PowerShell Reverse Shell](reverse_shell/powershell_reverse_shell/README.md)
    * [windows-php-reverse-shell](https://raw.githubusercontent.com/Dhayalanb/windows-php-reverse-shell/master/Reverse%20Shell.php)
-8. [Post Exploitation](windows_post_exploitation/README.md)
+10. [Post Exploitation](windows_post_exploitation/README.md)
    
    * [SharpHound: Data Collector](windows_post_exploitation/sharphound/README.md)
    * [CrackMapExecWin: Subnet Scanner](windows_post_exploitation/crackmapexecwin/README.md)
@@ -38,10 +40,10 @@ This repository contains hands-on training content on how to attack a Windows bo
        * `powershell -noexit "& ""C:\Users\jmendes\Desktop\GruntHTTP.ps1"""` ---> `https://poshoholic.com/2007/09/27/invoking-a-powershell-script-from-cmdexe-or-start-run/`
    * [Attacking Kerberos](windows_post_exploitation/attacking_kerberos/README.md)
 
-9. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
-10. Privilege Escalation
-    * [WinRM: Port 5985,5986](privilege_escalation/winrm_5985/README.md)
+11. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
+12. Privilege Escalation
     * [AlwaysInstallElevated](privilege_escalation/alwaysinstallelevated/README.md)
+    * [GetChangesAll](privilege_escalation/getchangesall/README.md)
     * [CVE-2019-1388: GUI Interaction Required](https://github.com/jas502n/CVE-2019-1388)
     * [Juicy Potato: From Service Accounts to SYSTEM](privilege_escalation/juicy_potato/README.md)
       * https://book.hacktricks.xyz/windows/windows-local-privilege-escalation/juicypotato
