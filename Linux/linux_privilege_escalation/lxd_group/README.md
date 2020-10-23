@@ -47,8 +47,16 @@ Access control for LXD is based on **group membership**. The root user as well a
 
         cd /mnt/root/
 
+10. Clean-up
+
+        lxc stop CONTAINER_NAME
+        lxc delete CONTAINER_NAME
+        lxc image delete rootimage
+
 ## References
 
 * https://www.hackthebox.eu/
+* https://blog.m0noc.com/2018/10/lxc-container-privilege-escalation-in.html
 * https://linuxcontainers.org/lxd/getting-started-cli/#initial-configuration
 * https://linuxcontainers.org/lxd/docs/master/security
+* https://blog.m0noc.com/2018/10/lxc-container-privilege-escalation-in.html

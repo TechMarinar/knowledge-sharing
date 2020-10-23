@@ -17,7 +17,7 @@ This repository contains hands-on training content on how to attack a Linux box.
 5. [Generating Attack Payload](generating_attack_payload/README.md)
 6. [Obtaining Reverse Shell](obtaining_reverse_shell/README.md)
 7. [Obtaining Interactive Shell](obtaining_interactive_shell/README.md)
-8. [Escape Rrestricted Shell](escape_restricted_shell/README.md)
+8. [Escaping Rrestricted Shell](escaping_restricted_shell/README.md)
 9. File Transfer
    * [TFTP: UDP Port 69](file_transfer/tftp_udp69/README.md)
 10. Privilege Escalation

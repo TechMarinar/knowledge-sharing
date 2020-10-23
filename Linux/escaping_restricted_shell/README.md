@@ -1,4 +1,4 @@
-# Escape Restricted Shell
+# Escaping Restricted Shell
 
 * Use **man** command to spawn a bash shell
 

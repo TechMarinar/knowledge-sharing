@@ -12,6 +12,10 @@
 2. **Method 2**
 
         python3 -c "import pty;pty.spawn('/bin/bash')"
+        export TERM=xterm
+        press ctrl+z key combination 
+        stty raw -echo
+        fg
 
 ## References
 
