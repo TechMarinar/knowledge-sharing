@@ -13,6 +13,7 @@ This repository contains hands-on training content on how to attack a Windows bo
 9. Code Execution
    * [SQL Injection](https://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/)
    * [Microsoft IIS WebDAV Write Access Code Execution](https://www.rapid7.com/db/modules/exploit/windows/iis/iis_webdav_upload_asp)
+   * [CloudMe Sync 1.11.2 Buffer Overflow + SEH](code_execution/cloudme_bufferoverflow_seh/README.md)
 10. Reverse Shell
     * [Powercat](reverse_shell/reverse_shell_powercat/README.md)
     * [PowerShell Reverse Shell](reverse_shell/powershell_reverse_shell/README.md)
@@ -29,7 +30,8 @@ This repository contains hands-on training content on how to attack a Windows bo
     * [Attacking Kerberos](windows_post_exploitation/attacking_kerberos/README.md)
 
 12. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
-13. Privilege Escalation
+13. [Port Forwarding](port_forwarding/README.md)
+14. Privilege Escalation
     * [AlwaysInstallElevated](privilege_escalation/alwaysinstallelevated/README.md)
     * [GetChangesAll](privilege_escalation/getchangesall/README.md)
     * [CVE-2019-1388: GUI Interaction Required](https://github.com/jas502n/CVE-2019-1388)
