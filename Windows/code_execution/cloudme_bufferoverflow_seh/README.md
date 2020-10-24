@@ -25,6 +25,8 @@ CloudMe Sync is a synchronization application which syncs local storage with the
 
             plink.exe -ssh -l <KaliUSERNAME> -pw <KaliPASSWORD> -N -R <KaliIP>:<KaliPORT>:127.0.0.1:8888 <KaliIP>
 
+   5. Follow steps mentioned [here](https://bufferoverflows.net/practical-exploitation-part-1-cloudme-sync-1-11-2-bufferoverflow-seh/)
+
 ## References
 
 * https://bufferoverflows.net/practical-exploitation-part-1-cloudme-sync-1-11-2-bufferoverflow-seh/
