@@ -16,7 +16,5 @@
 
 ## References
 
-**Listener:**
-
 * https://pentestlab.blog/tag/msi/
 * https://blog.netspi.com/bypassing-anti-virus-with-metasploit-msi-files/
