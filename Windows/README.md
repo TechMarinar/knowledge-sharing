@@ -10,15 +10,18 @@ This repository contains hands-on training content on how to attack a Windows bo
 6. [IIS Short File Name Disclosure](iis/README.md)
 7. [DS_Walk: If .DS_Store file is public](ds_walk/README.md)
 8. [SSH: Port 22](ssh_22/README.md)
-9. Code Execution
-   * [SQL Injection](https://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/)
-   * [Microsoft IIS WebDAV Write Access Code Execution](https://www.rapid7.com/db/modules/exploit/windows/iis/iis_webdav_upload_asp)
-   * [CloudMe Sync 1.11.2 Buffer Overflow + SEH](code_execution/cloudme_bufferoverflow_seh/README.md)
-10. Reverse Shell
+9. [NetBIOS: Port 137, 138, 139](netbios_137/README.md)
+10. Code Execution
+    * [SQL Injection](https://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/)
+    * [Microsoft IIS WebDAV Write Access Code Execution](https://www.rapid7.com/db/modules/exploit/windows/iis/iis_webdav_upload_asp)
+    * [CloudMe Sync 1.11.2 Buffer Overflow + SEH](code_execution/cloudme_bufferoverflow_seh/README.md)
+    * [smb-vuln-ms08-067 | CVE-2008-4250 | NetAPI](code_execution/smb-vuln-ms08-067/README.md)
+    * [smb-vuln-ms17-010 | CVE-2017-0143 | EternalBlue](code_execution/smb-vuln-ms17-010/README.md)
+11. Reverse Shell
     * [Powercat](reverse_shell/reverse_shell_powercat/README.md)
     * [PowerShell Reverse Shell](reverse_shell/powershell_reverse_shell/README.md)
     * [windows-php-reverse-shell](https://raw.githubusercontent.com/Dhayalanb/windows-php-reverse-shell/master/Reverse%20Shell.php)
-11. [Post Exploitation](windows_post_exploitation/README.md)
+12. [Post Exploitation](windows_post_exploitation/README.md)
     * [SharpHound: Data Collector](windows_post_exploitation/sharphound/README.md)
     * [CrackMapExecWin: Subnet Scanner](windows_post_exploitation/crackmapexecwin/README.md)
     * [Getting Indirect Shell in Restricted Environment](windows_post_exploitation/indirect_shell/README.md)
@@ -29,10 +32,11 @@ This repository contains hands-on training content on how to attack a Windows bo
     * [Active Directory Enumeration](windows_post_exploitation/active_directory_enumeration/README.md)
     * [Attacking Kerberos](windows_post_exploitation/attacking_kerberos/README.md)
 
-12. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
-13. [Port Forwarding](port_forwarding/README.md)
-14. Privilege Escalation
+13. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
+14. [Port Forwarding](port_forwarding/README.md)
+15. [Privilege Escalation](privilege_escalation/README.md)
     * [AlwaysInstallElevated](privilege_escalation/alwaysinstallelevated/README.md)
     * [GetChangesAll](privilege_escalation/getchangesall/README.md)
     * [CVE-2019-1388: GUI Interaction Required](https://github.com/jas502n/CVE-2019-1388)
     * [Juicy Potato: From Service Accounts to SYSTEM](privilege_escalation/juicy_potato/README.md)
+    * [DLL Hijacking](privilege_escalation/dll_hijacking/README.md)
