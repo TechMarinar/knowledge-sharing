@@ -33,8 +33,10 @@ This repository contains hands-on training content on how to attack a Windows bo
     * [Attacking Kerberos](windows_post_exploitation/attacking_kerberos/README.md)
 
 13. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
-14. [Port Forwarding](port_forwarding/README.md)
-15. [Privilege Escalation](privilege_escalation/README.md)
+14. [Compiling Exploit Code](compiling_exploit_code/README.md)
+15. [Port Forwarding](port_forwarding/README.md)
+16. [Privilege Escalation](privilege_escalation/README.md)
+    * [SeImpersonatePrivilege](privilege_escalation/seimpersonateprivilege/README.md)
     * [AlwaysInstallElevated](privilege_escalation/alwaysinstallelevated/README.md)
     * [GetChangesAll](privilege_escalation/getchangesall/README.md)
     * [CVE-2019-1388: GUI Interaction Required](https://github.com/jas502n/CVE-2019-1388)
