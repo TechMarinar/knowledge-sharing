@@ -20,10 +20,11 @@ This repository contains hands-on training content on how to attack a Linux box.
 8. [Escaping Rrestricted Shell](escaping_restricted_shell/README.md)
 9. Exploits
    * [DistCC Daemon: Port 3632](exploits/distccd_3632/README.md)
+   * [Buffer Overflow in Linux Binary](exploits//buffer_overflow_linux/README.md)
 10. File Transfer
     * [TFTP: UDP Port 69](file_transfer/tftp_udp69/README.md)
-10. Privilege Escalation
+11. Privilege Escalation
     * [Malicious Binary](linux_privilege_escalation/malicious_binary/README.md)
     * [Restricted Sudo](linux_privilege_escalation/restricted_sudo/README.md)
     * [LXD Group](linux_privilege_escalation/lxd_group/README.md)
-
+12. [General](general/README.md)
