@@ -20,3 +20,4 @@ https://github.com/ticarpi/jwt_tool.git)
 * https://www.tariqhawis.com/htb-under-construction-web-challange/
 * https://github.com/ticarpi/jwt_tool/wiki
 * https://www.pingidentity.com/en/company/blog/posts/2019/jwt-security-nobody-talks-about.html
+* https://pyjwt.readthedocs.io/en/latest/
