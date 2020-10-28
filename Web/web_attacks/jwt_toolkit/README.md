@@ -16,6 +16,7 @@ https://github.com/ticarpi/jwt_tool.git)
 
 ## References
 
+* https://ncu204.com/post/hack_the_box/under-construction/
 * https://www.tariqhawis.com/htb-under-construction-web-challange/
 * https://github.com/ticarpi/jwt_tool/wiki
 * https://www.pingidentity.com/en/company/blog/posts/2019/jwt-security-nobody-talks-about.html
