@@ -30,9 +30,10 @@ This repository contains hands-on training content on how to attack a Windows bo
     * [PowerShell: File Transfer](windows_post_exploitation/file_transfer_powershell/README.md)
     * [ROBOCOPY: Reverse File Transfer](windows_post_exploitation/reverse_file_transfer/README.md)
     * [Finding Readable/Writable Files & Directories](windows_post_exploitation/readable_writable_file_directory_enumeration/README.md)
-    * [Psexec.py: Login](windows_post_exploitation/psexec_login/README.md)
     * [Active Directory Enumeration](windows_post_exploitation/active_directory_enumeration/README.md)
     * [Attacking Kerberos](windows_post_exploitation/attacking_kerberos/README.md)
+    * [Psexec.py: Login](windows_post_exploitation/psexec_login/README.md)
+    * [What Next?](windows_post_exploitation/what_next/README.md)
 
 14. [MSFvenom: Generating Attack Payload](generating_attack_payload/README.md)
 15. [Compiling Exploit Code](compiling_exploit_code/README.md)
@@ -43,4 +44,5 @@ This repository contains hands-on training content on how to attack a Windows bo
     * [GetChangesAll](privilege_escalation/getchangesall/README.md)
     * [CVE-2019-1388: GUI Interaction Required](https://github.com/jas502n/CVE-2019-1388)
     * [Juicy Potato: From Service Accounts to SYSTEM](privilege_escalation/juicy_potato/README.md)
+    * [MS11-046 | Microsoft Windows (x86) - 'afd.sys' Local Privilege Escalation](privilege_escalation/ms11-046_afd.sys/README.md)
     * [DLL Hijacking](privilege_escalation/dll_hijacking/README.md)

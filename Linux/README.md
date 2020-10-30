@@ -24,7 +24,8 @@ This repository contains hands-on training content on how to attack a Linux box.
 10. File Transfer
     * [TFTP: UDP Port 69](file_transfer/tftp_udp69/README.md)
 11. Privilege Escalation
-    * [Malicious Binary](linux_privilege_escalation/malicious_binary/README.md)
-    * [Restricted Sudo](linux_privilege_escalation/restricted_sudo/README.md)
-    * [LXD Group](linux_privilege_escalation/lxd_group/README.md)
+    * [Find files containing keywords]()
+    * [Create Malicious Binary](linux_privilege_escalation/malicious_binary/README.md)
+    * [Exploit Restricted Sudo](linux_privilege_escalation/restricted_sudo/README.md)
+    * [Exploit LXD Group](linux_privilege_escalation/lxd_group/README.md)
 12. [General](general/README.md)

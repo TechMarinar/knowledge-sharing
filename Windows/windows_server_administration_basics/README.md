@@ -27,6 +27,10 @@
 
     This setting allows low privileged users to create a Windows Installer package (MSI) and execute commands as SYSTEM.
 
+## Read Value of a Registry Key
+
+    reg query "HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Installer"
+
 ## Learning Resources
 
 * [Active Directory Tutorial for Beginners](https://www.youtube.com/watch?v=nKcrVtvZvpk)

