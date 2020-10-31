@@ -28,4 +28,6 @@ This repository contains hands-on training content on how to attack a Linux box.
     * [Create Malicious Binary](linux_privilege_escalation/malicious_binary/README.md)
     * [Exploit Restricted Sudo](linux_privilege_escalation/restricted_sudo/README.md)
     * [Exploit LXD Group](linux_privilege_escalation/lxd_group/README.md)
-12. [General](general/README.md)
+    * [MySQL: Port 3306](linux_privilege_escalation/mysql_3306/README.md)
+12. [Post Exploitation](linux_post_exploitation/README.md)
+13. [General](general/README.md)

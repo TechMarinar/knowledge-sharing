@@ -41,6 +41,14 @@
         sessions -l
         sessions -i 1
 
+## General
+
+* Execute a powershell script from command line
+
+        > powershell -c Get-ExecutionPolicy
+        > powershell -c Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+        > powershell -file "C:\Program Files (x86)\DAUM\test.ps1"
+
 ## References
 
 * https://gist.githubusercontent.com/egre55/c058744a4240af6515eb32b2d33fbed3/raw/2c6e4a2d6fd72ba0f103cce2afa3b492e347edc2/powershell_reverse_shell.ps1
