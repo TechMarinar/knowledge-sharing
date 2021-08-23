@@ -117,7 +117,7 @@
         master_security_group_ids = [
         "sg-0701055adb32e03c2",
         ]
-        masters_role_arn = arn:aws:iam::625077889421:role/masters.kops.nullbangalore.site
+        masters_role_arn = arn:aws:iam::62NNNNNNNN21:role/masters.kops.nullbangalore.site
         masters_role_name = masters.kops.nullbangalore.site
         node_autoscaling_group_ids = [
         "nodes.kops.nullbangalore.site",
@@ -128,7 +128,7 @@
         node_subnet_ids = [
         "subnet-07caa79d4303b009b",
         ]
-        nodes_role_arn = arn:aws:iam::625077889421:role/nodes.kops.nullbangalore.site
+        nodes_role_arn = arn:aws:iam::62NNNNNNNN21:role/nodes.kops.nullbangalore.site
         nodes_role_name = nodes.kops.nullbangalore.site
         region = ap-south-1
         route_table_public_id = rtb-08dcf341209c578f9
